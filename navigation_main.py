@@ -30,7 +30,7 @@ start=1
 destination=300
 image_s=[]#starting image 
 
-image = Image.open('/home/petered/projects/Auto-encoder/pictures/'+ str(start) +'.jpg')
+image = Image.open('/home/petered/projects/Auto-encoder/pictures/'+ str(start) +'.jpg')#change the path to your file address where image data are stored.
 image = image.resize((shrink, shrink))
 image=np.asarray(image)
 image=image.tolist()
@@ -39,7 +39,7 @@ image_s=np.asarray(image_s)
 image_s= np.tile(image_s, ( batch_size,1,1,1))
 
 image_d=[]#destination images
-image = Image.open('/home/petered/projects/Auto-encoder/pictures/'+ str(destination) +'.jpg')
+image = Image.open('/home/petered/projects/Auto-encoder/pictures/'+ str(destination) +'.jpg')#change the path to your file address where image data are stored.
 image = image.resize((shrink, shrink))
 image=np.asarray(image)
 image=image.tolist()
