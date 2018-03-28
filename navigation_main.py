@@ -71,7 +71,8 @@ print(points[1],'checking producing straight line points in latent space')
 # navi.sert_points(num_p,points)
 
 # =======2.GD METHOD =========================================================
-# points= navi.gd_points(points,num_p)#gradient descent on the path sequence
+#gradient descent on the path sequence
+# points= navi.gd_points(points,num_p)#should first run the code navi.visualise_route of straight line, for the sake of producing straight line sequence.
 
 #====this block method is no use, just bold try, please ignore it.===
 # navi.route_reality('try1',original_img_size,shrink,points)
