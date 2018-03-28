@@ -70,15 +70,16 @@ print(points[1],'checking producing straight line points in latent space')
 # navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim)
 # navi.sert_points(num_p,points)
 
-# =======2. METHOD PART=========================================================
-# points= navi.gd_points(points,num_p)
-# navi.route_reality('try1',original_img_size,shrink,points)
+# =======2.GD METHOD =========================================================
+# points= navi.gd_points(points,num_p)#gradient descent on the path sequence
 
+#====this block method is no use, just bold try, please ignore it.===
+# navi.route_reality('try1',original_img_size,shrink,points)
 # for i in range(1):#for insert a randomly selected points.
 #     points=navi.sert_points(points)
 # print(points.shape)
 # points=navi.var_poins(num_p , points ,10)
-
+#============================================================
 
 
 #======================= 3.visualising the route on generated images==============================
