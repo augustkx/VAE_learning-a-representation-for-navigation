@@ -75,9 +75,9 @@ print(points[1],'checking producing straight line points in latent space')
 # navi.route_reality('try1',original_img_size,shrink,points)
 
 # for i in range(1):#for insert a randomly selected points.
-#     points=sert_points(points)
+#     points=navi.sert_points(points)
 # print(points.shape)
-# points=var_poins(num_p , points ,10)
+# points=navi.var_poins(num_p , points ,10)
 
 
 
