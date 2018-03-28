@@ -416,7 +416,7 @@ def route_reality(file,original_img_size,shrink,points):
     #============== visualising the route on real map.===============================================================
     digit_size = shrink
     import math
-    figure = np.zeros((digit_size*int(math.ceil(POINTS.shape[0]/10)+1), digit_size*10,3))
+    figure = np.zeros((digit_size*int(math.ceil(POINTS.shape[0]/10)), digit_size*10,3))
     print(int(math.ceil(POINTS.shape[0]/10)))
     j=0
     for i, xi in enumerate(POINTS):
