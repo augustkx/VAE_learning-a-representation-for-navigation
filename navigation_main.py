@@ -1,5 +1,6 @@
-from navigation_function.py import encoder
-import navigation_function.py as navi
+from navigation_function import encoder
+import navigation_function as navi
+
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 from PIL import Image
 import scipy.misc
