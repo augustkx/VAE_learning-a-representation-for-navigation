@@ -27,4 +27,5 @@ Run the navigation_main.py file. In line 30 and 31, you can change the starting 
 
 First, we try to produce a straigh line in the 4 D latent space map,connecting the staring point(in the latent space) and ending point(in the latent space): navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim). 
 
+It shows a path that is reasonable but not continuous and 
 Second, 
