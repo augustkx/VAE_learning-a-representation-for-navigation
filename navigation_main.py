@@ -27,8 +27,8 @@ else:
 latent_dim = 4
 
 #==============================================================================================
-start=1#the number represents the image in the training data i.e. the image are stored in the training collection numbered from 1 to 1000.
-destination=300
+start=1#the number represents the corresponding image in the training data i.e. the image are stored in the training collection numbered from 1 to 1000.
+destination=300# the number represents the corresponoding image in training data.
 image_s=[]#starting image 
 
 image = Image.open('/home/petered/projects/Auto-encoder/pictures/'+ str(start) +'.jpg')#change the path to your file address where image data are stored.
@@ -71,16 +71,10 @@ print(points[1],'checking producing straight line points in latent space')
 # navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim)
 # navi.sert_points(num_p,points)
 
-# =======2.GD METHOD =========================================================
+# =======2.gradient descent on the path sequence =========================================================
 #gradient descent on the path sequence
-# points= navi.gd_points(points,num_p)#should first run the code navi.visualise_route of straight line, for the sake of producing straight line sequence.
-
-#====this block method is no use, just bold try, please ignore it.===
-# navi.route_reality('try1',original_img_size,shrink,points)
-# for i in range(1):#for insert a randomly selected points.
-#     points=navi.sert_points(points)
-# print(points.shape)
-# points=navi.var_poins(num_p , points ,10)
+#should first run the code navi.visualise_route of straight line, for the sake of producing straight line sequence.
+# points= navi.gd_points(points,num_p)
 #============================================================
 
 
