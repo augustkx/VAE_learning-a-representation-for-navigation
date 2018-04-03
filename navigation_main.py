@@ -27,7 +27,7 @@ else:
 latent_dim = 4
 
 #==============================================================================================
-start=1#the number represents the image in the training data i.e. the image are stored in the training collection number from 1 to 1000.
+start=1#the number represents the image in the training data i.e. the image are stored in the training collection numbered from 1 to 1000.
 destination=300
 image_s=[]#starting image 
 
