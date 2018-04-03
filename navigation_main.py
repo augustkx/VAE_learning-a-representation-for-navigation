@@ -95,11 +95,11 @@ print(points[1],'checking producing straight line points in latent space')
 
 #=====4. select a route by hand and calculate the loss.===================================
 # hard coded. visualisation included.
-digits=navi.route_manually(num_p,shrink,file='manually selected')
+# digits=navi.route_manually(num_p,shrink,file='manually selected')
 # feed them through encoder
-digits_encoded= encoder.predict(digits, batch_size=batch_size)
+# digits_encoded= encoder.predict(digits, batch_size=batch_size)
 # feed them through the decoder
-navi.visualise_route('reconstructed_from_manually',digits_encoded,shrink,batch_size,latent_dim)
+# navi.visualise_route('reconstructed_from_manually',digits_encoded,shrink,batch_size,latent_dim)
 
 
 
