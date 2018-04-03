@@ -40,7 +40,7 @@ points= navi.gd_points(points,num_p) in part 2, and navi.visualise_route('passwa
 and navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim) in part 3.
 
 Fifth, as both pathes produced through the learned latent space manifold are reaonable and short, but not continously enough for a robot to navigate itself through, we want to prove that there is actually a path in the latent space that is reasonable and short and continuous enough for a root to lead itself through.
-To do this, comment: 
+To do this, uncomment: all the commands in part 4.
 
 
 
