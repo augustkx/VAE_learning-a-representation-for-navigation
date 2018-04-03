@@ -25,9 +25,9 @@ Run the navigation_main.py file. In line 30 and 31, you can change the starting 
 
 4. select a route by hand and calculate the loss
 
-First, we try to produce a straigh line in the 4 D latent space map,connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in the 1 part.
+First, we try to produce a straigh line in the 4 D latent space map,connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
-It shows a path that is reasonablely short but not continuous enough for a robot to navagate automously through.
+It shows a path that is reasonable and short, but not continuous enough for a robot to navagate automously through.
 
 Second, we can map this created path to the reality, by fitting the reconstructed image sequence (path) with the images in the training set. With the nearest neighbour metric, a corresponding path in reality is constructed. To do this, umcomment: navi.route_reality('straight_line',original_img_size,shrink,points) in part 3. navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
@@ -36,10 +36,11 @@ Third, we try to improve the path by Gradient Descent method. To do this, umcomm
 points= navi.gd_points(points,num_p) in part 2, and navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in the 1 part.
 
 Forth, we can map this created path to the reality. To do this, umcomment: 
-points= navi.gd_points(points,num_p) in part 2, and navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in the 1 part,
+points= navi.gd_points(points,num_p) in part 2, and navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1,
 and navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim) in part 3.
 
-Fifth, 
+Fifth, as both pathes produced through the learned latent space manifold are reaonable and short, but not continously enough for a robot to navigate itself through, we want to prove that there is actually a path in the latent space that is reasonable and short and continuous enough for a root to lead itself through.
+To do this, comment: 
 
 
 
