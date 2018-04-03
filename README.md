@@ -19,13 +19,14 @@ Run the navigation_main.py file. In line 30 and 31, you can change the starting 
 
 1. visualising generated images route
 
-2.gradient descent on the path sequence
+2. gradient descent on the path sequence
 
-3.visualising the route on generated images
+3. visualising the route on generated images
 
 4. select a route by hand and calculate the loss
 
-First, we try to produce a straigh line in the 4 D latent space map,connecting the staring point(in the latent space) and ending point(in the latent space): navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim). 
+First, we try to produce a straigh line in the 4 D latent space map,connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment the  navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in the 1 part.
 
-It shows a path that is reasonable but not continuous and 
+It shows a path that is reasonablely short but not continuous enough for a robot to navagate automously. 
+
 Second, 
