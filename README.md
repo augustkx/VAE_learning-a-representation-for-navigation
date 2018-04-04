@@ -46,7 +46,7 @@ To do this, uncomment: all the commands in part 4.
 
 
 
-#Reference
+# Reference
 https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder_deconv.py
 
 
