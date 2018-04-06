@@ -17,27 +17,30 @@ After the training data is ready. Run the training_model_vae_deconv _4d_latent.p
 After the VAE model is learned, it can be used as a representation map for navigation.
 Run the navigation_main.py file. In line 30 and 31, you can change the starting image and ending image. At the bottomo of the file, there are some four categories:
 
-1. visualising generated images route
+1. visualise path with generated images
 
-2. gradient descent on the path sequence
+2.gradient descent method on the path sequence, and visualize the path with generated images 
 
-3. visualising the route on generated images
+3.visualize the route with real frames according to generated images
 
 4. select a route by hand and calculate the loss
 
 First, we try to produce a straigh line in the 4 D latent space map,connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
-It shows a path that is reasonable and short, but not continuous enough for a robot to navagate automously through.
+It shows a path that is reasonable, but not continuous enough for a robot to navagate automously through.
 
 Second, we can map this created path to the reality, by fitting the reconstructed image sequence (path) with the images in the training set. With the nearest neighbour metric, a corresponding path in reality is constructed. To do this, umcomment: navi.route_reality('straight_line',original_img_size,shrink,points) in part 3. navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
 
 Third, we try to improve the path by Gradient Descent method. To do this, umcomment: 
 points= navi.gd_points(points,num_p) in part 2, and navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in the 1 part.
+and navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim) in part 2.
+
 
 Forth, we can map this created path to the reality. To do this, umcomment: 
-points= navi.gd_points(points,num_p) in part 2, and navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1,
-and navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim) in part 3.
+points= navi.gd_points(points,num_p) in part 2, and navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in the 1 part.
+and navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim) in part 2.
+and navi.route_reality('Gredient_descent',original_img_size,shrink,points) in part 3.
 
 Fifth, as both pathes produced through the learned latent space manifold are reasonable and short, but not continously enough for a robot to navigate itself through, we want to prove that there is actually a path in the latent space that is reasonable and short and continuous enough for a root to lead itself through.
 To do this, uncomment: all the commands in part 4.
