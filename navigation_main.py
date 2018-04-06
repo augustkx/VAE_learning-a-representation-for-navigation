@@ -67,24 +67,19 @@ num_p=50
 points = (z_d - z_s) * np.linspace(0, 1, num_p)[:, None] + z_s # A (num_p, 4) array of points
 print(points[1],'checking producing straight line points in latent space')
 
-# =================1. visualising generated images route=======================================
+# ========1. visualise path with generated images =======================================
 # navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim)
 # navi.sert_points(num_p,points)
 
-# =======2.gradient descent on the path sequence =========================================================
+# =======2.gradient descent on the path sequence, and visualize the path with generated images ==========
 #gradient descent on the path sequence
 #should first run the code navi.visualise_route of straight line, for the sake of producing straight line sequence.
 # points= navi.gd_points(points,num_p)
+# navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim)
 #============================================================
 
-
-#======================= 3.visualising the route on generated images==============================
-
-# navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim)
-
-# # ==== visualising the route with real frames according to generated images===========================================
-# navi.route_reality('bias',original_img_size,shrink,points)#very risky, gradient ascend.
-# navi.route_reality('try2',original_img_size,shrink,points)
+# ==== 3. visualize the route with real frames according to generated images======================
+# navi.route_reality('Gredient_descent',original_img_size,shrink,points)
 # navi.route_reality('straight_line',original_img_size,shrink,points)
 
 #=====4. select a route by hand and calculate the loss.===================================
