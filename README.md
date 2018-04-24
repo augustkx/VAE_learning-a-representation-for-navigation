@@ -17,7 +17,7 @@ After the training data is ready. Run the training_model_vae_deconv _4d_latent.p
 After the VAE model is learned, it can be used as a representation map for navigation.
 Run the navigation_main.py file. In line 30 and 31, you can change the starting image and ending image. At the bottomo of the file, there are some four categories:
 
-1. visualise path with generated images
+1. initail path with a naive method, visualise path with generated images
 
 2.gradient descent method on the path sequence, and visualize the path with generated images 
 
