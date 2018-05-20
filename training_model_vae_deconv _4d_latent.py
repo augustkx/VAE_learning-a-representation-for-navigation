@@ -165,10 +165,7 @@ vae.summary()
 #========================load images for traing==========================================
 x_train=[]
 for i in range(1,1001):
-    # image = Image.open('/home/kaixin/vae-map/vae_map/pictures/'+ str(i) +'.jpg')
-    image = Image.open('/home/petered/projects/Auto-encoder/pictures/'+ str(i) +'.jpg')
-    # image = Image.open('/home/kaixin/vae-map/vae_map/pictures/' + str(i) + '.jpg')
-    # image = scipy.misc.imread('/home/petered/projects/Auto-encoder/pictures/'+ str(i) +'.jpg')
+    image = Image.open('/home/petered/projects/Auto-encoder/pictures/'+ str(i) +'.jpg')#change the path to the file address where your image data is stored.
     image = image.resize((shrink, shrink))  # downing sampling
     image=np.asarray(image)
     # image= np.mean(image, axis=(2))
