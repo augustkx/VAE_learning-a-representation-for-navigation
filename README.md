@@ -17,13 +17,13 @@ After the training data is ready. Run the training_model_vae_deconv _4d_latent.p
 After the VAE model is learned, it can be used as a representation map for navigation.
 Run the navigation_main.py file. In line 30 and 31, you can change the starting image and ending image. At the bottomo of the file, there are some four categories:
 
-1. initail path with a naive method, visualise path with generated images
+1.Initail path in Euclidean space, visualise path with generated images
 
-2.gradient descent method on the path sequence, and visualize the path with generated images 
+2.Gradient descent method on the path sequence to update it to geodesic, and visualize the path with generated images 
 
-3.visualize the route with real frames according to generated images
+3.Visualize the route with real frames according to generated images
 
-4. select a route by hand and calculate the loss
+4.Select a ground truth route by hand 
 
 First, we try to produce a straigh line in the 4 D latent space map,connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
