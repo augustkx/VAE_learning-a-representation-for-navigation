@@ -31,6 +31,8 @@ Run the navigation_main.py file. In line 30 and 31, you can change the starting 
 
 4.Select a ground truth route by humans as the basis for evaluation
 
+The experiments described in the thesis is done as following:
+
 First, we try to produce a straigh line in the 4 D latent Euclidean space, connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
 Second, we can map this created path to the reality, by fitting the reconstructed image sequence (path) with the images in the training set. With the nearest neighbour metric, a corresponding path in reality is constructed. To do this, umcomment:  navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
