@@ -55,10 +55,6 @@ To do this: uncomment all the commands in part 3.
 
 Lastly, to evaluate the results: uncomment all the commands in part 4.
 
-```diff
-+ this will be highlighted in green
-- this will be highlighted in red
-```
 
 
 
