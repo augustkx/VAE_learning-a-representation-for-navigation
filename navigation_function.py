@@ -412,7 +412,7 @@ def route_manually(num_p,shrink,file='manually selected'):#file should
         l += LA.norm(digits[j]-digits[j+1])
 
     print(l,file+' length.')
-#=====visualise the manuallly selected ones.=====
+#=====visualise the ground truth / manuallly selected ones.=====
     digit_size = shrink
     figure = np.zeros((digit_size*num_p/10, digit_size*10,3))
     j=0
@@ -435,7 +435,7 @@ def route_manually(num_p,shrink,file='manually selected'):#file should
 
 ''' evaluate each reconstrcted image in the route w.r.t manually selected one, by measuring the distance of it and the next image.
     Compare the distance with that of the image and a random image.
-    for the reconstructed image in the route produced w.r.t the manually selected route.'''
+    for the reconstructed image in the route produced w.r.t the ground truth route.'''
 def metric(points,shrink,batch_size):
 
     digit_size = shrink
