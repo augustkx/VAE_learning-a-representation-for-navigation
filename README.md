@@ -27,7 +27,11 @@ You will get the visulaization of learned manifold and also a 'h5' file that sto
 ### Path Planning
 
 After the VAE model is learned, it can be used as a representation map for navigation.
-Run the navigation_main.py file. In line 30 and 31, you can change the starting image and ending image. At the bottom of the file, there are some functions about path planning method, whose effects can be in four categories:
+Run:
+```
+navigation_main.py file
+```
+In line 30 and 31, you can change the starting image and ending image. At the bottom of the file, there are some functions about path planning method, whose effects can be in four categories:
 
 1.Initail path in Euclidean space, visualise path with generated images
 
