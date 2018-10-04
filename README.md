@@ -18,7 +18,7 @@ Note, that in the code you should change the address, where the training data is
 After the training data is ready. Run the training_model_vae_deconv _4d_latent.py,  you will get the visulaization of learned manifold and also a 'h5' file that stores the trained VAE model parameter information. This file will be used in the path planning stage.
 
 
-### Path PLanning
+### Path Planning
 
 After the VAE model is learned, it can be used as a representation map for navigation.
 Run the navigation_main.py file. In line 30 and 31, you can change the starting image and ending image. At the bottom of the file, there are some functions about path planning method, whose effects can be in four categories:
@@ -31,7 +31,7 @@ Run the navigation_main.py file. In line 30 and 31, you can change the starting 
 
 4.Select a ground truth route by humans as the basis for evaluation
 
-The experiments described in the thesis is done as following:
+**The experiments described in the thesis is done as following:**
 
 First, we try to produce a straigh line in the 4 D latent Euclidean space, connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
