@@ -41,7 +41,7 @@ navi.route_reality('straight_line',original_img_size,shrink,points) in part 3.
 Third, we try to update the path to geodesic by Gradient Descent method. To do this, umcomment: 
 navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in the 1 part;
 and points = navi.gd_points(points,num_p) in part 2;
-and navi.visualise_route('passway_dg.png',points,shrink,batch_size,latent_dim) in part 2.
+and navi.route_reality('straight_line',shrink,points) in part 2.
 
 
 Forth, we can map this created path to the reality for the route visualization. To do this, umcomment: 
