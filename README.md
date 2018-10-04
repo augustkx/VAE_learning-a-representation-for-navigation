@@ -17,9 +17,7 @@ ffmpeg -ss 0:0:37 -i input.mp4 -t 0:3:20  -c copy out.mp4
   ffmpeg -i out.mp4 -vf fps=1000/3.33*60 %d.png
   ```
 
-Note, that in the code you should change the address, where the training data is stored in your system. 
-
-After the training data is ready. Run the training_model_vae_deconv _4d_latent.py,  you will get the visulaization of learned manifold and also a 'h5' file that stores the trained VAE model parameter information. This file will be used in the path planning stage.
+After the training data is ready. Run the training_model_vae_deconv _4d_latent.py,  you will get the visulaization of learned manifold and also a 'h5' file that stores the trained VAE model parameter information. This file will be used in the path planning stage. Note, that in the code you should change the address, where the training data is stored in your system. 
 
 
 ### Path Planning
