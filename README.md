@@ -12,7 +12,7 @@ Here are the procedures for prearing training images:
 ffmpeg -ss 0:0:37 -i input.mp4 -t 0:3:20  -c copy out.mp4 
 ```
 
-2. extract 1000 images from the cut video.
+2. extract 1000 images from the cut video:
   ```
   ffmpeg -i out.mp4 -vf fps=1000/3.33*60 %d.png
   ```
@@ -37,7 +37,11 @@ Run the navigation_main.py file. In line 30 and 31, you can change the starting 
 
 **The experiments described in the thesis are conducted as following:**
 
-First, we try to produce a straigh line in the 4 D latent Euclidean space, connecting the staring point(in the latent space) and ending point(in the latent space), and then project it to the manifold to get the path. Then, a corresponding route is generated. To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size) in part 1.
+First, we try to produce a straigh line in the 4 D latent Euclidean space, connecting the staring point(in the latent space) and ending point(in the latent space), and then project it to the manifold to get the path. Then, a corresponding route is generated. To do this, uncomment: 
+```
+navi.visualise_route('passway_straight.png',points,shrink,batch_size)
+```
+in part 1.
 
 Second, we can construct route with real frames with the nearest neighbour metric. This is done by mapping each reconstructed image in the sequence with the images in the training set. To do this, umcomment:  navi.visualise_route('passway_straight.png',points,shrink,batch_size) in part 1.
 navi.route_reality('straight_line',shrink,points) in part 2.
