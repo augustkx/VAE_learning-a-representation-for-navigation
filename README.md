@@ -1,6 +1,6 @@
 # Learning a Representation Map for Robot Navigation using Deep Vatiational Autoencoder
 
-### Training VAE
+### VAE Training 
 
 
 The training data is the set of images exracting from a house tour video in https://www.youtube.com/watch?v=jdNiWiXiJQ4\&t=200s
