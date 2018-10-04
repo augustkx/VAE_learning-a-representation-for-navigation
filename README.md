@@ -1,4 +1,4 @@
-# AVE_learning-a-representation-for-navigation
+# Learning a Representation Map for Robot Navigation using Deep Vatiational Autoencoder
 
 ### Training VAE
 
