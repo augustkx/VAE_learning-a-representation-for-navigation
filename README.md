@@ -45,7 +45,7 @@ and POINTS= navi.gd_points(points,num_p) in part 2.
 
 Forth, we can construct route with real frames with the nearest neighbour metric. To do this, umcomment: 
 navi.visualise_route('passway_straight.png',points,shrink,batch_size) in part 1;
-and points= navi.gd_points(points,num_p) in part 1;
+and POINTS= navi.gd_points(points,num_p) in part 1;
 and navi.visualise_route('passway_dg.png',points,shrink,batch_size,num_p) in part 1;
 and POINTS=navi.route_reality('Gredient_descent',shrink,points) in part 2.
 
