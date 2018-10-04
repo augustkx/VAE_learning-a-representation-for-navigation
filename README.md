@@ -31,7 +31,7 @@ Run the navigation_main.py file. In line 30 and 31, you can change the starting 
 
 4.Select a ground truth route by humans as the basis for evaluation
 
-**The experiments described in the thesis are done as following:**
+**The experiments described in the thesis are conducted as following:**
 
 First, we try to produce a straigh line in the 4 D latent Euclidean space, connecting the staring point(in the latent space) and ending point(in the latent space). To do this, uncomment: navi.visualise_route('passway_straight.png',points,shrink,batch_size,latent_dim) in part 1.
 
