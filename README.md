@@ -3,7 +3,7 @@
 ### Training VAE
 
 
-The training data is the seqence of image exracting from a house tour video in https://www.youtube.com/watch?v=jdNiWiXiJQ4\&t=200s
+The training data is the set of images exracting from a house tour video in https://www.youtube.com/watch?v=jdNiWiXiJQ4\&t=200s
 
 Here are the procedures for prearing training images:
 
