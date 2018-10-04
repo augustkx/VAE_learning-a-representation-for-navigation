@@ -74,7 +74,7 @@ print(points[1],'checking producing straight line points in latent space')
 
 # =======1.gradient descent method on the path sequence, and visualize the path with generated images ==========
 # navi.visualise_route('passway_straight.png',points,shrink,batch_size)#initialize
-# #gradient descent on the path sequence
+# gradient descent on the path sequence
 #should first run the code navi.visualise_route of straight line, for the sake of producing straight line sequence.
 points= navi.gd_points(points,num_p)
 navi.visualise_route('passway_dg.png',points,shrink,batch_size,num_p)
