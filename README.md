@@ -71,6 +71,7 @@ To do this: uncomment all the functions in part 3.
 # Reference
 https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder_deconv.py
 
-
+# Citation
+Hu, Kaixin, and Peter O'Connor. "Learning a representation map for robot navigation using deep variational autoencoder." arXiv preprint arXiv:1807.02401 (2018).
 
 
